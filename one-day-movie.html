@@ -4,34 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Quiet Place: Day One|Trailer</title>
-   
 </head>
-<body >
-<div class="video-container">
-
-    <iframe  src="https://www.youtube.com/embed/YPY7J-flzE8?autoplay=1&mute=1" >
-    </iframe>
-    
-</div>
-    <style>
-         body {
-            overflow-x: hidden;
-            overflow-y: hidden;
-            margin: 0;
-            
-        }
-        .video-container {
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-        iframe {
-            position: absolute;
-            top: -10%;
-            width: 100%;
-            height: 100%;
+<body>
+    <div id="youtube-video-container">
+        <iframe id="youtube-video"
+                src="https://www.youtube.com/embed/YPY7J-flzE8?enablejsapi=1"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+    </div>
+    <script>
+        // Function to toggle fullscreen mode
+        function toggleFullscreen(video) {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) {
+                video.webkitRequestFullscreen(); // Safari
+            } else if (video.msRequestFullscreen) {
+                video.msRequestFullscreen(); // IE
+            }
         }
     
-    </style>
+        // Get the YouTube video iframe element
+        const videoIframe = document.getElementById("youtube-video");
+    
+        // Add an event listener to the iframe to toggle fullscreen mode on click
+        videoIframe.addEventListener("click", () => toggleFullscreen(videoIframe));
+    </script>
+    
 </body>
+<style>
+    *{
+        margin: 0;
+
+    }
+    iframe {
+        position: absolute;
+        top: -10%;
+        width: 100vw;
+        height: 110vh;}
+</style>
 </html>
