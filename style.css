@@ -378,8 +378,7 @@ z-index: 998;
         
     }
     .whatch{
-      width: auto;
-      height:380px;
+      height:350px;
     }
   }
   @media(max-width:641px){
