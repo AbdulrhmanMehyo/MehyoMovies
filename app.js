@@ -35,3 +35,18 @@ ball.addEventListener("click", () => {
   ball.classList.toggle("active");
   footer.classList.toggle("active");
 });
+const whatchButton= document.querySelector(".whatch-Active");
+const whatch= document.querySelector(".whatch");
+const close= document.querySelector(".close");
+const video=document.querySelector(".video")
+whatchButton.addEventListener("click",()=>{
+  console.log("hi")
+  whatch.style.display="flex"
+});
+close.addEventListener("click",()=>{
+  whatch.style.display="none"
+  
+
+});
+
+ 
