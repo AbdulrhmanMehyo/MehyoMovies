@@ -16,15 +16,15 @@
             <div class="logo-container">
                 <h1 class="logo">MehyoMovies</h1>
             </div>
-            <div class="menu-container">
+            <nav class="menu-container">
                 <ul class="menu-list">
-                    <li class="menu-list-item Active">Home</li>
-                    <li class="menu-list-item">Movies</li>
-                    <li class="menu-list-item">Series</li>
-                    <li class="menu-list-item">Popular</li>
-                    <li class="menu-list-item">Trends</li>
+                    <li class="menu-list-item"><a href="#">Home</a></li>
+                    <li class="menu-list-item"><a href="#Movies">Movies</a></li>
+                    <li class="menu-list-item"><a href="#Series">Series</a></li>
+                    <li class="menu-list-item"><a href="#Popular">Popular</a></li>
+                    <li class="menu-list-item"><a href="#Trends">Trends</li></a>
                 </ul>
-            </div>
+            </nav>
             <div class="profile-container">
                 <img src="./img/profile.png" alt="" class="profile-picture">
                 <div class="profile-text-container">
@@ -42,7 +42,7 @@
     <div class="sidebar">
         <i class="left-menu-icon" ><img src="./img/logo.png" class="logoimg"></i>
         <i class="left-menu-icon fas fa-search"></i>
-        <i class="left-menu-icon fas fa-home"></i>
+        <a href="#"><i id="Home-Active" class="left-menu-icon fas fa-home"></i></a>
         <i class="left-menu-icon fas fa-users"></i>
         <i class="left-menu-icon fas fa-bookmark"></i>
         <i class="left-menu-icon fas fa-tv"></i>
@@ -50,15 +50,23 @@
         <i class="left-menu-icon fas fa-shopping-cart"></i>
     </div>
     <div class="container">
+        
         <div class="contant-container">
             <div class="featured-content" 
             style="background:linear-gradient(to bottom, rgba(0,0,0,0), #151515), url(./img/f-1.jpeg); background-repeat: no-repeat;background-size: cover;">
+            <div class="whatch">
+                <iframe class="video" width="100%" height="100%"  src="https://www.youtube.com/embed/CHKn-yDCE2w?">
+                </iframe>
+                   <span class="close">X</span>
+            </div>
             <img src="./img/f-t-1.png" alt="" class="featured-title">
              <p class="featured-desc">Adam Clay is a beekeeper, but someone very important to him is scammed and driven to harm. However, what these power and money hungry scammers don't know, is that Clay is an agent in a classified program called Beekeepers, and they underestimate how much of a threat he is.</p>
-            <button class="featured-button">WATCH</button>
-            </div>
+            <button class="featured-button whatch-Active">WATCH</button>
+             </div>
+            
+
             <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <h1 class="movie-list-title" id="Movies" >NEW RELEASES</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -108,7 +116,7 @@
                 </div>
             </div>
             <div class="movie-list-container">
-                <h1 class="movie-list-title">POPULAR  </h1>
+                <h1 class="movie-list-title" id="Popular" >POPULAR  </h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -164,7 +172,7 @@
                 <button class="featured-button">WATCH</button>
             </div>
             <div class="movie-list-container">
-                <h1 class="movie-list-title">TREDNDING NOW</h1>
+                <h1 class="movie-list-title" id="Trends">TREDNDING NOW</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -214,7 +222,7 @@
                 </div>
             </div>
             <div class="movie-list-container">
-                <h1 class="movie-list-title">SERIRS THIS WEEK</h1>
+                <h1 class="movie-list-title" id="Series">SERIRS THIS WEEK</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
@@ -262,7 +270,7 @@
                     </div>
                     <footer>
                         <div class="footerrights">
-                            <span >@2024 MEHYO.</span> <span class="copyright">rights reserved.</span> 
+                            <span >© 2024 MEHYO.</span> <span class="copyright">All rights reserved.</span> 
                         </div>
                     </footer>
                     <i class="fas fa-chevron-right arrow"></i>
