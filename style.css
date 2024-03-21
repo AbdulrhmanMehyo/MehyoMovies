@@ -177,7 +177,7 @@ body {
   background-color: white;
 }
 .whatch{
-  width: auto;
+  width:auto;
   height: 420px;
   background-color:#151515;
   position: absolute;
@@ -186,7 +186,8 @@ body {
   left: 0;
   right: 0;
   margin: 50px 0px;
-  padding: 10px 50px;
+  padding: 10px  ;
+  padding-left: 50px;
   display: none;
   flex-direction: column;
 -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
@@ -220,7 +221,8 @@ z-index: 998;
   left: 0;
   right: 0;
   margin: 50px 0px;
-  padding: 10px 50px;
+  padding: 10px;
+  padding-left: 50px;
   display: none;
   flex-direction: column;
 -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
