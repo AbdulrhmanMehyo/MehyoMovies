@@ -35,6 +35,8 @@ ball.addEventListener("click", () => {
   ball.classList.toggle("active");
   footer.classList.toggle("active");
 });
+var frame = document.getElementById("iframeid");
+
 const whatchButton= document.querySelector(".whatch-Active");
 const whatch= document.querySelector(".whatch");
 const close= document.querySelector(".close");
@@ -45,6 +47,7 @@ whatchButton.addEventListener("click",()=>{
 });
 close.addEventListener("click",()=>{
   whatch.style.display="none"
+frame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
   
 
 });
