@@ -35,21 +35,41 @@ ball.addEventListener("click", () => {
   ball.classList.toggle("active");
   footer.classList.toggle("active");
 });
-var frame = document.getElementById("iframeid");
-
 const whatchButton= document.querySelector(".whatch-Active");
 const whatch= document.querySelector(".whatch");
 const close= document.querySelector(".close");
-const video=document.querySelector(".video")
 whatchButton.addEventListener("click",()=>{
   console.log("hi")
   whatch.style.display="flex"
 });
 close.addEventListener("click",()=>{
   whatch.style.display="none"
-frame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
   
 
 });
 
- 
+
+
+function stopVideo() {
+  // Modify the iframe's src attribute to remove the autoplay parameter
+  document.getElementById('youtube-player').src = "https://www.youtube.com/embed/CHKn-yDCE2w?";
+}
+
+const whatchButton1= document.querySelector(".whatch-Active-1");
+const whatch1= document.querySelector(".whatch-1");
+const close1= document.querySelector(".close-1");
+whatchButton1.addEventListener("click",()=>{
+  console.log("higg")
+  whatch1.style.display="flex"
+});
+close1.addEventListener("click",()=>{
+  whatch1.style.display="none"
+  
+
+});
+
+
+function stopVideo1() {
+  // Modify the iframe's src attribute to remove the autoplay parameter
+  document.getElementById('youtube-player-1').src = "https://www.youtube.com/embed/HIs9x49DK7I?si=ajBzdKUV0Cxkc3-U";
+}
