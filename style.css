@@ -133,6 +133,7 @@ body {
     background-color: #151515;
     min-height: calc(100vh - 50px);
     color: white;
+    padding-top:  50px;
   }
   .contant-container{
     margin-left: 50px;
@@ -167,8 +168,13 @@ body {
     outline: none;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.2s all ease-in-out;
 
 
+}
+.featured-button:hover{
+  color:#4dbf00;
+  background-color: white;
 }
 .whatch{
   width: auto;
@@ -188,9 +194,7 @@ box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
 z-index: 998;
 
 
-
 }
-
 .close{
   width: 20px;
   height: 20px;
@@ -205,6 +209,46 @@ z-index: 998;
   cursor: pointer;
   padding: 2px;
 
+}
+.whatch-1{
+  width: auto;
+  height: 420px;
+  background-color:#151515;
+  position: absolute;
+  top: 1100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 50px 0px;
+  padding: 10px 50px;
+  display: none;
+  flex-direction: column;
+-webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+z-index: 998;}
+
+.close:hover{
+  color: #4dbf00;
+  background-color: white;
+}
+.close-1{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #4dbf00;
+  color: white;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+
+}
+.close-1:hover{
+  color: #4dbf00;
+  background-color: white;
 }
 .movie-list-container{
     padding: 0 20px;
@@ -281,10 +325,14 @@ z-index: 998;
     bottom:10px;
     left: 50px;
     opacity: 0;
-    transition: 1s all ease-in-out;
+    transition: 0.2s all ease-in-out;
 
 
 
+}
+.movie-list-item-button:hover{
+  color:#4dbf00;
+  background-color: white;
 }
 .arrow{
     font-size: 120px;
@@ -378,7 +426,8 @@ z-index: 998;
         
     }
     .whatch{
-      height:350px;
+      width: auto;
+      height:400px;
     }
   }
   @media(max-width:641px){
