@@ -200,7 +200,6 @@ z-index: 998;
   width: 20px;
   height: 20px;
   position: absolute;
-  background-color: #4dbf00;
   color: white;
   top: 10px;
   right: 10px;
@@ -231,13 +230,11 @@ z-index: 998;}
 
 .close:hover{
   color: #4dbf00;
-  background-color: white;
 }
 .close-1{
   width: 20px;
   height: 20px;
   position: absolute;
-  background-color: #4dbf00;
   color: white;
   top: 10px;
   right: 10px;
@@ -250,7 +247,7 @@ z-index: 998;}
 }
 .close-1:hover{
   color: #4dbf00;
-  background-color: white;
+  
 }
 .movie-list-container{
     padding: 0 20px;
