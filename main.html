@@ -1,0 +1,293 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MehyoMovies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">MehyoMovies</h1>
+            </div>
+            <nav class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="#">Home</a></li>
+                    <li class="menu-list-item"><a href="#Movies">Movies</a></li>
+                    <li class="menu-list-item"><a href="#Series">Series</a></li>
+                    <li class="menu-list-item"><a href="#Popular">Popular</a></li>
+                    <li class="menu-list-item"><a href="#Trends">Trends</li></a>
+                </ul>
+            </nav>
+            <div class="profile-container">
+                <img src="./img/profile.png" alt="" class="profile-picture">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon" ><img src="./img/logo.png" class="logoimg"></i>
+        <i class="left-menu-icon fas fa-search"></i>
+        <a href="#"><i id="Home-Active" class="left-menu-icon fas fa-home"></i></a>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container">
+        
+        <div class="contant-container">
+            <div class="featured-content" 
+            style="background:linear-gradient(to bottom, rgba(0,0,0,0), #151515), url(./img/f-1.jpeg); background-repeat: no-repeat;background-size: cover;">
+            <div class="whatch">
+                <iframe id="youtube-player" width="100%" height="100%"  src="https://www.youtube.com/embed/CHKn-yDCE2w?">
+                </iframe>
+                   <span id="close-button" onclick="stopVideo()" class="close">X</span>
+            </div>
+            <img src="./img/f-t-1.png" alt="" class="featured-title">
+             <p class="featured-desc">Adam Clay is a beekeeper, but someone very important to him is scammed and driven to harm. However, what these power and money hungry scammers don't know, is that Clay is an agent in a classified program called Beekeepers, and they underestimate how much of a threat he is.</p>
+            <button class="featured-button whatch-Active">WATCH</button>
+             </div>
+            
+
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="Movies" >NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./img/1.jpeg" alt="">
+                            <span class="movie-list-item-title">Day One </span>
+                            <p class="movie-list-item-desc"> is a prequel spinoff to the previous films, set during the first day of the alien invasion.</p>
+                           <a href="one-day-movie.html"><button class="movie-list-item-button">Watch</button></a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                            <span class="movie-list-item-title">Despicable Me 4</span>
+                            <p class="movie-list-item-desc">Gru, Lucy, Margo, Edith, and Agnes welcome a new member to the family, Gru Jr., who is intent on tormenting his dad.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpeg" alt="">
+                            <span class="movie-list-item-title">Beetlejuice 2 </span>
+                            <p class="movie-list-item-desc">The plot revolves around a recently deceased young couple who become ghosts haunting their former home .</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpeg" alt="">
+                            <span class="movie-list-item-title">The Fall Guy</span>
+                            <p class="movie-list-item-desc">A stuntman who, after a near-career-ending accident, is drafted back into service when the star of a mega-budget movie</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpeg" alt="">
+                            <span class="movie-list-item-title">Kung Fu Panda 4</span>
+                            <p class="movie-list-item-desc">o is set to become the new spiritual leader of the Valley of Peace, but before he can do that, he must find a successor to become the new Dragon Warrior.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpeg" alt="">
+                            <span class="movie-list-item-title">Godzilla x Kong</span>
+                            <p class="movie-list-item-desc">Godzilla against a colossal deadly threat hidden within our world that threatens the existence of their species and our very own.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpeg" alt="">
+                            <span class="movie-list-item-title">Red One</span>
+                            <p class="movie-list-item-desc">After a villain kidnaps Santa from the North Pole, an E.L.F operative must partner with the world's most accomplished tracker to find Santa and save Christmas.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="Popular" >POPULAR  </h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/8.jpeg" alt="">
+                            <span class="movie-list-item-title">Wicked</span>
+                            <p class="movie-list-item-desc">Wicked tells the story of two unlikely friends, Elphaba and Galinda , whose friendship struggles through their opposing personalities, viewpoints, same love interest.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/9.jpeg" alt="">
+                            <span class="movie-list-item-title">IF</span>
+                            <p class="movie-list-item-desc">A young girl who goes through a difficult experience begins to see everyone's imaginary friends who have been left behind as their real-life friends have grown up.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/10.jpeg" alt="">
+                            <span class="movie-list-item-title">Borderlands</span>
+                            <p class="movie-list-item-desc">set in the distant future at a time when various mega-corporations seek control of planets to colonise and mine for their mineral wealth and resources.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/11.jpeg" alt="">
+                            <span class="movie-list-item-title">Dune: Part Two</span>
+                            <p class="movie-list-item-desc">Following the destruction of House Atreides by House Harkonnen, Princess Irulan Corrino, secretly journals that Paul Atreides may still be alive.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/12.jpeg" alt="">
+                            <span class="movie-list-item-title">Joker: Folie à Deux</span>
+                            <p class="movie-list-item-desc">Folie à Deux is an American musical psychological thriller film sequel to the 2019 film Joker.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/13.jpeg" alt="">
+                            <span class="movie-list-item-title">The Lord </span>
+                            <p class="movie-list-item-desc">Tells the story of Helm Hammerhand, a legendary King of Rohan who must defend against an army of Dunlendings.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                            <span class="movie-list-item-title">Despicable Me 4</span>
+                            <p class="movie-list-item-desc">Gru, Lucy, Margo, Edith, and Agnes welcome a new member to the family, Gru Jr., who is intent on tormenting his dad.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('./img/f-2.webp');background-repeat: no-repeat;background-size: cover;">
+                <div class="whatch-1" >
+                    <iframe id="youtube-player-1" width="100%" height="100%"  src="https://www.youtube.com/embed/HIs9x49DK7I?si=ajBzdKUV0Cxkc3-U">
+                    </iframe>
+                       <span id="close-button-1" onclick="stopVideo1()" class="close-1">X</span>
+                </div>
+                <img class="featured-title" src="img/f-t-2.png" alt="">
+                <p class="featured-desc">The "Shōgun" series by James Clavell is a gripping saga spanning six novels that explore the complexities of power, culture, and survival across diverse settings in Asia, offering spectator a captivating blend of adventure, romance, and historical intrigue.</p>
+                <button class="featured-button whatch-Active-1">WATCH</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="Trends">TREDNDING NOW</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpeg" alt="">
+                            <span class="movie-list-item-title">Godzilla x Kong</span>
+                            <p class="movie-list-item-desc">Godzilla against a colossal deadly threat hidden within our world that threatens the existence of their species and our very own.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpeg" alt="">
+                            <span class="movie-list-item-title">Red One</span>
+                            <p class="movie-list-item-desc">After a villain kidnaps Santa from the North Pole, an E.L.F operative must partner with the world's most accomplished tracker to find Santa and save Christmas.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/12.jpeg" alt="">
+                            <span class="movie-list-item-title">Joker: Folie à Deux</span>
+                            <p class="movie-list-item-desc">Folie à Deux is an American musical psychological thriller film sequel to the 2019 film Joker.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpeg" alt="">
+                            <span class="movie-list-item-title">Beetlejuice 2 </span>
+                            <p class="movie-list-item-desc">The plot revolves around a recently deceased young couple who become ghosts haunting their former home .</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpeg" alt="">
+                            <span class="movie-list-item-title">The Fall Guy</span>
+                            <p class="movie-list-item-desc">A stuntman who, after a near-career-ending accident, is drafted back into service when the star of a mega-budget movie</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/11.jpeg" alt="">
+                            <span class="movie-list-item-title">Dune: Part Two</span>
+                            <p class="movie-list-item-desc">Following the destruction of House Atreides by House Harkonnen, Princess Irulan Corrino, secretly journals that Paul Atreides may still be alive.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpeg" alt="">
+                            <span class="movie-list-item-title">Kung Fu Panda 4</span>
+                            <p class="movie-list-item-desc">o is set to become the new spiritual leader of the Valley of Peace, but before he can do that, he must find a successor to become the new Dragon Warrior.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title" id="Series">SERIRS THIS WEEK</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/s1.jpeg" alt="">
+                            <span class="movie-list-item-title">Griselda</span>
+                            <p class="movie-list-item-desc">A woman of exemplary meekness and patience. a female given name: from a Germanic word meaning “gray battle.”</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/S2.jpeg" alt="">
+                            <span class="movie-list-item-title">Elsbeth</span>
+                            <p class="movie-list-item-desc"> Elsbeth Tascioni, utilizes her singular point of view to make unique observations and corner criminals alongside the NYPD.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./img/s3.jpeg" alt="">
+                            <span class="movie-list-item-title">3 Body Problem</span>
+                            <p class="movie-list-item-desc">A fateful decision made in 1960s China reverberates in the present, where a group of scientists partner with a detective to confront an existential planetary threat.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/s4.jpeg" alt="">
+                            <span class="movie-list-item-title">Ted</span>
+                            <p class="movie-list-item-desc">Depicts the early life of a sentient teddy bear toy named Ted, as he lives with 16-year-old John Bennett and his family in Framingham, Massachusetts.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./img/s5.jpg" alt="">
+                            <span class="movie-list-item-title">Constellation</span>
+                            <p class="movie-list-item-desc">An astronaut returning to Earth after an accident during her mission finds parts of her life are missing, or not as she remembers them.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="./img/s6.jpeg" alt="">
+                            <span class="movie-list-item-title">Mr. & Mrs. Smith</span>
+                            <p class="movie-list-item-desc">Two strangers land jobs with a spy agency that offers them a life of espionage, wealth, and travel. </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/s7.jpg" alt="">
+                            <span class="movie-list-item-title">Manhunt</span>
+                            <p class="movie-list-item-desc">A stuntman who, after a near-career-ending accident, is drafted back into service when the star of a mega-budget movie</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="footerrights">
+                            <span >© 2024 MEHYO.</span> <span class="copyright">All rights reserved.</span> 
+                        </div>
+                    </footer>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
