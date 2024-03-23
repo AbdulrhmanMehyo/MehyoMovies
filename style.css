@@ -74,7 +74,7 @@ position: absolute;
 width: 100%;
 height: 0;
 background: rgba(255, 255, 255, 0.1);
-backdrop-filter: blur(15px);
+backdrop-filter: blur(3px);
 overflow: hidden;
 transition: height .2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
 position: fixed;
@@ -100,12 +100,11 @@ z-index: 998;
   justify-content: center;
   margin-left: 20px;
   width: 100%;
-  transition: 0.1s all ease-in-out;
 
 }
 .menu-list-dropdown li:hover{
-  background-color:#4dbf00;
-  
+  background:#4dbf00;
+  backdrop-filter: blur(2px);  
 }
 
   .profile-container{
@@ -282,6 +281,8 @@ z-index: 998;}
 
 .close:hover{
   color: #4dbf00;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);
 }
 .close-1{
   width: 20px;
@@ -299,7 +300,8 @@ z-index: 998;}
 }
 .close-1:hover{
   color: #4dbf00;
-  
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(1px);  
 }
 .movie-list-container{
     padding: 0 20px;
