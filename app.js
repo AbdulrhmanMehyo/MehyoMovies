@@ -73,3 +73,16 @@ function stopVideo1() {
   // Modify the iframe's src attribute to remove the autoplay parameter
   document.getElementById('youtube-player-1').src = "https://www.youtube.com/embed/HIs9x49DK7I?si=ajBzdKUV0Cxkc3-U";
 }
+
+//drop down list
+const toggleBtn = document.querySelector(".toggle-btn");
+const dropdownmenu = document.querySelector(".menu-list-dropdown");
+toggleBtn.onclick= function() {
+  dropdownmenu.classList.toggle("open")
+  
+}
+
+dropdownmenu.onclick= function() {
+  dropdownmenu.classList.toggle("open")
+  
+}
