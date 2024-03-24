@@ -272,7 +272,7 @@ z-index: 998;
   height: 420px;
   background-color:#151515;
   position: absolute;
-  top: 1100;
+  top: 1270;
   bottom: 0;
   left: 0;
   right: 0;
@@ -534,7 +534,7 @@ z-index: 998;}
   margin-bottom: 25px;
 }
 }
- 
+
   @media(max-width:641px){
     featured-desc{
         width: 200px;
