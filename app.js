@@ -22,6 +22,8 @@ console.log(movieLists[i].querySelectorAll("img").length);
 
 });
 //TOGGLE
+
+const togglebtn= document.querySelector(".toggle-btn");
 const footer= document.querySelector(".copyright");
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(
@@ -34,6 +36,7 @@ ball.addEventListener("click", () => {
   });
   ball.classList.toggle("active");
   footer.classList.toggle("active");
+  toggleBtn.classList.toggle("active");
 });
 const whatchButton= document.querySelector(".whatch-Active");
 const whatch= document.querySelector(".whatch");
@@ -86,3 +89,4 @@ dropdownmenu.onclick= function() {
   dropdownmenu.classList.toggle("open")
   
 }
+
