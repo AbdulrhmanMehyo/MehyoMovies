@@ -90,6 +90,7 @@ z-index: 998;
 .menu-list-dropdown a{
   text-decoration: none;
   color: #4dbf00;
+  font-weight: bold;
   font-family: "Sen", sans-serif;
 
 }
