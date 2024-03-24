@@ -92,6 +92,7 @@ z-index: 998;
   color: #4dbf00;
   font-weight: bold;
   font-family: "Sen", sans-serif;
+  border-bottom: thick double black;
 
 }
 .menu-list-dropdown li {
