@@ -427,6 +427,11 @@ z-index: 997;}
     color: black;
 
   }
+.menu-list-dropdown a.active{
+  color: black;
+  text-shadow: #4dbf00 0px 0 1px;
+  }
+    
   .menu-list a.active:hover{
     color: #4dbf00;
 
