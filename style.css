@@ -89,7 +89,7 @@ z-index: 998;
 
 .menu-list-dropdown a{
   text-decoration: none;
-  color: white;
+  color: #4dbf00;
   font-family: "Sen", sans-serif;
 
 }
@@ -104,6 +104,7 @@ z-index: 998;
 }
 .menu-list-dropdown li:hover{
   background:#4dbf00;
+  color: white;
   backdrop-filter: blur(2px);  
 }
 
