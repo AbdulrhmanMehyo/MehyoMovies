@@ -27,7 +27,7 @@ const togglebtn= document.querySelector(".toggle-btn");
 const footer= document.querySelector(".copyright");
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(
-  ".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle,.menu-list a,.menu-list-dropdown a"
+  ".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle,.menu-list a"
 );
 
 ball.addEventListener("click", () => {
@@ -89,4 +89,19 @@ dropdownmenu.onclick= function() {
   dropdownmenu.classList.toggle("open")
   
 }
-
+//loader
+$(window).on("load", (function() {
+  $(".loader-wrapper").fadeOut(1e3),
+  setTimeout((function() {
+      document.documentElement.style.overflow = "visible",
+      timerBar()
+  }
+  ), 900);
+  
+}
+)),
+window.onerror = function() {
+  document.querySelector(".loader-wrapper").style.display = "none",
+  document.documentElement.style.overflow = "visible"
+}
+;
