@@ -191,7 +191,7 @@ z-index: 997;
   }
   .container{
     background-color: #151515;
-    min-height: calc(100vh - 50px);
+    min-height: calc(100dvh - 50px);
     color: white;
     padding-top:  50px;
   }
@@ -200,7 +200,7 @@ z-index: 997;
 
   }
 .featured-content{
-    height: 50vh;
+    height: 50dvh;
     padding: 50PX;
 
     
